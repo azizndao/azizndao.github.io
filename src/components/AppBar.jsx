@@ -1,5 +1,5 @@
 import './AppBar.scss'
-import AppLogo from '../assets/logo.svg'
+import AppLogo from '../assets/images/logo.svg'
 import { Link } from 'react-router-dom'
 
 export default function AppBar() {
