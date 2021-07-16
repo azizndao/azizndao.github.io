@@ -1,0 +1,57 @@
+@import '../assets/variables';
+
+$appBarColor: $surfaceColor;
+$appBarTextColor: $onSurfaceColor;
+
+header {
+    background-color: $appBarColor;
+    color: $appBarTextColor;
+}
+
+#appbar {
+    height: $appBarHeight;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: auto;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .appbar-right {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+
+        #app-logo {
+            $size:  $appBarHeight - 8px;
+            height: $size;
+            width: $size;
+        }
+
+    }
+
+    .appbar-menu {
+        align-self: flex-end;
+        margin: 0 16px;
+    }
+
+    .menu-item {
+        margin: 0 16px;
+        font-size: 1.2rem;
+
+        &:hover {
+            color: rgba($primaryColor, 0.7);
+        }
+
+        &:active {
+            background-color: $primaryColor;
+            color:$onPrimaryColor;
+            font-weight: bold;
+        }
+    }
+}
+
